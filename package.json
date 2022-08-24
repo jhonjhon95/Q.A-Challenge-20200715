@@ -8,11 +8,9 @@
     "cy:run": "cypress run --env allure=true",
     "allure:report": "allure generate --clean allure-results",
     "allure:open": "allure open allure-report",
-
     "test": "cypress run",
     "test-r": "npm-run-all cy:run allure:report limpar-res allure:open",
     "test-rf": "npm-run-all allure:report limpar-res allure:open",
-
     "cypress:ci": "concurrently \"cypress run\" --kill-others \"ng serve\" --success first",
     "setup": "npm install --no-optional --color-always && npm link && npm link cypress-cucumber-preprocessor && npm install through",
     "build": "npm run lint && npm run stop-only",
