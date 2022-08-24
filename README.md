@@ -14,6 +14,8 @@ Passos abaixo -
 npx cypress open - abre a interface do cypress
 
 "test": roda os testes no terminal - sem relatório
+
 "test-r": roda os testes no terminal - com relatório - && abre relatório no browser
+
 "test-rf": comando destinado a forçar a geração de relatório caso o teste quebre -  
 && abre relatório no browser
